@@ -1,5 +1,7 @@
 # clean-docker-images
 
+[![Build Status](https://travis-ci.com/patsoffice/clean-docker-images.svg?branch=master)](https://travis-ci.com/github/patsoffice/clean-docker-images)
+
 clean-docker-images is a CLI tool for identifying and removing unused, older docker images.
 
 ## Installing
