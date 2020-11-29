@@ -29,7 +29,7 @@ Checking:
 
 Removing (add the `-r` or `--remove` flag):
 
-    $ clean-docker-images -e tcp://192.168.1.100:2375
+    $ clean-docker-images -e tcp://192.168.1.100:2375 -r
     Can remove image sha256:c8743cd346eeea9f11ba10f472bccf7e066d6ccc1d3bd6c9c395847201de29f2 for mvance/unbound@sha256
     Removing image sha256:c8743cd346eeea9f11ba10f472bccf7e066d6ccc1d3bd6c9c395847201de29f2
     Can remove image sha256:f680154f76ee9c952bf68476f7b7f638d266d9527fb741fab7483f150ba3e723 for chronograf@sha256
