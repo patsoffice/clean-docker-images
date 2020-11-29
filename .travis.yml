@@ -14,7 +14,7 @@ install:
   - go get github.com/mitchellh/gox
 script:
   - goveralls -v -service=travis-ci
-  - gox -os="linux darwin windows" -arch="amd64" -output="{{.Dir}}_{{.OS}}_{{.Arch}}" -ldflags "-X github.com/patsoffice/clean-docker-images/internal/cmd.Rev=`git rev-parse --short HEAD` -X github.com/patsoffice/clean-docker-images/internal/cmd.Ver=$TRAVIS_BRANCH" -verbose ./...
+  - gox -os="linux darwin windows" -arch="amd64" -output="{{.Dir}}_{{.OS}}_{{.Arch}}" -ldflags "-X github.com/patsoffice/clean-docker-images/internal/cmd.Rev=`git rev-parse --short HEAD` -X github.com/patsoffice/clean-docker-images/cmd.Ver=$TRAVIS_BRANCH" -verbose ./...
 notifications:
   email: false
 deploy:
